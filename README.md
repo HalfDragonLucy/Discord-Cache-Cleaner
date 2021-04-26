@@ -15,4 +15,4 @@ You need .NET Core 3.1 installed.
 
 * Run the DiscordCacheCleaner.exe
 * Select "Set Directory" and input your cache folder.
-* Click on Save and Voila! 
+* Click on Run and Voila! 
