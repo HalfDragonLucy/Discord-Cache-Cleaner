@@ -38,7 +38,6 @@ namespace ReworkedDCC
 
                 RunAtStartUpCheck.Checked = runAtStart;
                 DirectoryLabel.Text = cacheDirectory;
-                StartCleaning();
             }
             else
             {
@@ -64,7 +63,7 @@ namespace ReworkedDCC
         private void CheckForKey()
         {
             string key_path = "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run";
-            string key_name = "Discord Auto Cleaner";
+            string key_name = "DiscordCacheCleaner";
 
             RegistryKey key = Registry.CurrentUser.OpenSubKey(key_path, true);
 
@@ -95,7 +94,7 @@ namespace ReworkedDCC
         private void RegisteryAutoStart()
         {
             RegistryKey key = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
-            key.SetValue("Discord Auto Cleaner", AppDomain.CurrentDomain.BaseDirectory + System.Reflection.Assembly.GetExecutingAssembly().GetName().Name + ".exe".ToString());
+            key.SetValue("DiscordCacheCleaner", AppDomain.CurrentDomain.BaseDirectory + System.Reflection.Assembly.GetExecutingAssembly().GetName().Name + ".exe".ToString());
         }
 
         private void StartCleaning()

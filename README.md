@@ -5,7 +5,7 @@
 This will automatically clean the cache folder of Discord at your computer startup.
 
 ### Preview
-![](https://i.ibb.co/PZN5PDb/index.jpg)
+![](https://i.ibb.co/MnDpXNY/index.png)
 
 # Requirement
 
